@@ -41,6 +41,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+
 import no.nordicsemi.android.mesh.ApplicationKey;
 import no.nordicsemi.android.mesh.NetworkKey;
 import no.nordicsemi.android.support.v18.scanner.ScanRecord;
@@ -112,6 +113,48 @@ public class Utils {
      * @return true if permissions are already granted, false otherwise.
      */
     public static boolean isLocationPermissionsGranted(final Context context) {
+        return ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED;
+    }
+
+    public static boolean isBleEnabled3() {
+        final BluetoothAdapter adapter = BluetoothAdapter.getDefaultAdapter();
+        return adapter != null && adapter.isEnabled();
+    }
+
+    /**
+     * Checks for required permissions.
+     *
+     * @return true if permissions are already granted, false otherwise.
+     */
+    public static boolean isLocationPermissionsGranted3(final Context context) {
+        return ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED;
+    }
+
+    public static boolean isBleEnabled1() {
+        final BluetoothAdapter adapter = BluetoothAdapter.getDefaultAdapter();
+        return adapter != null && adapter.isEnabled();
+    }
+
+    /**
+     * Checks for required permissions.
+     *
+     * @return true if permissions are already granted, false otherwise.
+     */
+    public static boolean isLocationPermissionsGranted1(final Context context) {
+        return ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED;
+    }
+
+    public static boolean isBleEnabled2() {
+        final BluetoothAdapter adapter = BluetoothAdapter.getDefaultAdapter();
+        return adapter != null && adapter.isEnabled();
+    }
+
+    /**
+     * Checks for required permissions.
+     *
+     * @return true if permissions are already granted, false otherwise.
+     */
+    public static boolean isLocationPermissionsGranted2(final Context context) {
         return ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED;
     }
 

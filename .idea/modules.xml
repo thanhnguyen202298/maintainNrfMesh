@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Android-nRF-Mesh-Library-master.iml" filepath="$PROJECT_DIR$/Android-nRF-Mesh-Library-master.iml" group="Android-nRF-Mesh-Library-master" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Android-nRF-Mesh-Library-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/maintainNrfMesh.iml" filepath="$PROJECT_DIR$/.idea/modules/maintainNrfMesh.iml" group="maintainNrfMesh" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/maintainNrfMesh-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/maintainNrfMesh-app.iml" group="maintainNrfMesh/app" />
       <module fileurl="file://$PROJECT_DIR$/mesh/mesh.iml" filepath="$PROJECT_DIR$/mesh/mesh.iml" group="Android-nRF-Mesh-Library-master/mesh" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mesh/no.nordicsemi.android.mesh-mesh.iml" filepath="$PROJECT_DIR$/.idea/modules/mesh/no.nordicsemi.android.mesh-mesh.iml" group="maintainNrfMesh/mesh" />
     </modules>
   </component>
 </project>
